@@ -21,3 +21,5 @@ sudo mariadb -u root -e "CREATE USER IF NOT EXISTS '$DB_USER'@'$APACHE_IP' IDENT
 sudo mariadb -u root -e "GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'$APACHE_IP';"
 sudo mariadb -u root -e "FLUSH PRIVILEGES;"
 
+# Bloquear acceso a Internet
+sudo ip route delete default
