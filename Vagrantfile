@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "FabioGMSMYSQL" do |mysql|
     mysql.vm.hostname = "FabioGMSMYSQL"
     mysql.vm.network "private_network", ip: "192.168.57.11", virtualbox__intnet: "red_interna"
-    mysql.vm.provision "shell", path: "MYSQL.sh"
+    mysql.vm.provision "shell", path: "MARIADB.sh"
   end
 
   config.vm.define "FabioGMSApache" do |apache|
