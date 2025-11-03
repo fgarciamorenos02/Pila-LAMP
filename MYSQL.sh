@@ -9,8 +9,10 @@ APACHE_IP="192.168.57.10"
 # Actualizar paquetes e instalar MARIADB
 sudo apt-get update
 sudo apt-get install -y mariadb-server mariadb-client git
-# Configurar MySQL para permitir conexiones remotas
+# Configurar MARIADB para permitir conexiones remotas
 sudo sed -i "s/bind-address.*/bind-address = 192.168.57.11/" /etc/mysql/mariadb.conf.d/50-server.cnf
+
+# Reinicio del servicio
 sudo systemctl restart mariadb
 
 # Crear base de datos y usuario para la VM Apache
