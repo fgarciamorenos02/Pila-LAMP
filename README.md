@@ -2,7 +2,7 @@
 
 ## Archivo Vagrantfile
 Para generar nuestro archivo de Vagrant, debemos ejecutar el comando: **vagrant init**.  
-Una vez creado el `Vagrantfile`, necesitamos editarlo siguiendo el ejemplo de la imagen para configurar las dos máquinas virtuales. Primero configuraremos la máquina de MySQL, ya que si no lo hacemos así, se produciría un error al crear los usuarios y las tablas durante el aprovisionamiento. En la máquina de Apache, haremos una redirección del puerto 80 al 8080. Ambas máquinas tienen una ip fija de la misma red.  
+Una vez creado el `Vagrantfile`, necesitamos editarlo siguiendo el ejemplo de la imagen para configurar las dos máquinas virtuales. Primero configuraremos la máquina de MARIADB, ya que si no lo hacemos así, se produciría un error al crear los usuarios y las tablas durante el aprovisionamiento. En la máquina de Apache, haremos una redirección del puerto 80 al 8080. Ambas máquinas tienen una ip fija de la misma red.  
 
 ![image](screenshots/VAGRANTFILE.png)
 
